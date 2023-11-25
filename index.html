@@ -4,88 +4,96 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Index</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     </head>
     <body>
-        <header>
-            <a href="#">
-                <img src="#" alt="Company Logo">
-            </a>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Portfolio</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="introduction">
-                <h1>Compelling Headline</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                </p>
-                <a href="#">Read more about our services</a>
-            </section>
-            <section class="help-visitors">
-                <h2>Engaging subheading. What can you help your visitors with</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                </p>
-            </section>
-            <section class="about-our-company-frontpage">
-                <img src="#" alt="">
-                <h2>About Our Company</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                </p>
-                <a href="#">Read more about us</a>
-            </section>
-            <section class="our-services">
-                <h2>Our Services</h2>
-                <section class="our-services-branding">
-                    <i>Icon</i>
-                    <h3>Branding</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        <div class="grid-container">
+            <header>
+                <img src="./img/logo1.png" alt="Company Logo" class="company-logo">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="nav-links">Home</a></li>
+                        <li><a href="products.html" class="nav-links">Portfolio</a></li>
+                        <li><a href="about.html" class="nav-links">About</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="contact-button">Contact</a>
+            </header>
+            <main>
+                <div class="index-grid">
+                <section class="introduction">
+                    <h1 class="compelling-headline">Compelling headline</h1>
+                    <p class="introduction-p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    </p>
+                    <a href="#" class="introduction-button">Read more about our services</a>
+                </section>
+                <section class="help-visitors">
+                    <h2 class="help-visitors-h2">Engaging subheading. What can you help your visitors with</h2>
+                    <p class="help-visitors-p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                     </p>
                 </section>
-                <section class="our-services-upload">
-                    <i>Icon</i>
-                    <h3>Design</h3>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                <section class="about-our-company-frontpage">
+                    <img src="./img/400x400.svg" alt="A 400x400 picture" class="about-our-img">
+                    <h2 class="about-our-h2">About Our Company</h2>
+                    <p class="about-our-p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                     </p>
+                    <a href="#" class="read-more-button">Read more about us</a>
                 </section>
-                <section class="our-services-development">
-                    <i>Icon</i>
-                    <h3>Development</h3>
-                    <p>
+                <section class="our-services">
+                    <h2>Our Services</h2>
+                    <section class="our-services-branding">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Branding</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </p>
+                    </section>
+                    <section class="our-services-upload">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <h3>Design</h3>
+                        <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </p>
-                </section>
-                <section class="our-services-support">
-                    <i>Icon</i>
-                    <h3>Support</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </p>
+                        </p>
+                    </section>
+                    <section class="our-services-development">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Development</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </p>
+                    </section>
+                    <section class="our-services-support">
+                        <i class="fa-solid fa-wifi"></i>
+                        <h3>Support</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </p>
+                    </section>
                 </section>
                 <section class="newsletter">
-                    <h3>Sign Up For Our Newsletter</h3>
-                    <label for="email" id="email-label">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Nora@epost.no">
-                    <a href="#">Sign me up!</a>
+                    <h3 class="h3-newsletter">Sign Up For Our Newsletter</h3>
+                    <div class="input-container">
+                        <label for="email" id="email-label">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Nora@epost.no">
+                        <a href="#" class="sign-me-up-button">Sign me up!</a>
+                    </div>
                 </section>
-            </section>
-        </main>
-        <footer>
-            <img src="#" alt="Footer Logo">
-            <p>CompanyRights CompanyName 2023</p>
-            <i>Facebook Icon</i>
-            <i>Instagram Icon</i>
-            <i>Linkedin Icon</i>
-        </footer>
+                </div>
+            </main>
+            <footer>
+                <img src="./img/logo1.png" alt="Footer Logo" class="footer-logo">
+                <p>CompanyRights CompanyName 2023</p>
+                <div class="social-media-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>

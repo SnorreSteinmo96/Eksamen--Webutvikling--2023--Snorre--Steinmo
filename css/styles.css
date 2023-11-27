@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 body {
@@ -110,6 +112,8 @@ footer p {
     color: white;
     font-size: 2rem;
 }
+
+/* Index Page */
 
 /* Index Grid */
 
@@ -269,6 +273,8 @@ footer p {
     width: 14rem;
 }
 
+/* Products Page */
+
 /* Products Grid */
 
 .products-grid {
@@ -282,6 +288,7 @@ footer p {
 .portfolio {
     grid-row-start: 1;
     background-image: url('../img/computer.jpg');
+    background-color: rgba(255, 255, 255, 0.5);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -305,37 +312,213 @@ footer p {
 .previous-jobs-buttons-section {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
 .previous-jobs-buttons {
     border: 0.1rem solid black;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 0.5rem;
-    margin-top: 1rem;
+}
 
+.explore-previous-jobs-h2 {
+    margin-bottom: 3%;
+}
+
+.explore-previous-jobs-hr {
+    width: 100%;
+    background-color: #e6bd43;
+    height: 0.1rem;
+    margin-bottom: 10%;
+}
+
+
+/* Portfolio Article Cards Section */
+
+article {
+    margin-bottom: 3rem;
 }
 
 hr {
-    border: none;
+    width: 100%;
+    background-color: #e6bd43;
     color: #e6bd43;
-    height: 1rem;
+    border-color: #e6bd43;
+    height: 0.15rem;
+    margin-bottom: 10%;
+}
+
+.portfolio-h3 {
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+}
+
+.portfolio-p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 1rem;
 }
 
 /* Branding Section */
 
 .portfolio-branding {
     grid-row-start: 3;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /* Design Section */
 
 .portfolio-design {
     grid-row-start: 4;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /* Development Section */
 
 .portfolio-development {
     grid-row-start: 5;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* About Page */
+
+/* About Grid */
+
+.about-grid {
+    display: grid;
+    grid-template-rows: 100vh repeat(5, auto);
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* About Our Company Section */
+
+.background-image-aboutpage {
+    grid-row-start: 1;
+    background-image: url('../img/coffee.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-our-company-aboutpage {
+    background-color: #fff;
+    opacity: 0.9;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.about-our-services-h1 {
+    order: 2;
+    margin-top: 1rem;
+    text-align: left;
+    width: 80%;
+}
+
+.company-name {
+    order: 1;
+    margin-top: 1rem;
+    color: #252525;
+    width: 80%;
+}
+
+.about-our-company-p {
+    order: 3;
+    margin-top: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #252525;
+}
+
+.about-our-company-button {
+    order: 4;
+    margin-top: 1rem;
+    width: 80%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #e6bd43;
+    padding: 1rem 1rem;
+}
+
+
+/* Our Services Section */
+
+.our-services-aboutus {
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 3rem;
+}
+
+.our-services-branding-aboutpage, .our-services-upload-aboutpage, .our-services-development-aboutpage, .our-services-support-aboutpage {
+    text-align: center;
+}
+
+.our-services-aboutus-h2 {
+    margin-top: 2rem;
+}
+
+.ourservices-p {
+    margin-top: 0.5rem;
+}
+
+.ourservicesicon {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+/* Clients Section */
+
+.clients {
+    grid-row-start: 3;
+    background-color: #e6bd43;
+    padding-bottom: 3rem;
+}
+
+.clients-h2 {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.company-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.company-logo {
+    min-width: 35%;
+}
+
+/* Contact Us Form Section */
+
+.contact-us-form {
+    grid-row-start: 4;
+}
+
+/* Contact Information Section */
+
+.contact-information {
+    grid-row-start: 5;
+}
+
+/* Interactive Map Section */ 
+
+.interactive-map {
+    grid-row-start: 6;
 }

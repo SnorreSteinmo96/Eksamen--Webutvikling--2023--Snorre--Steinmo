@@ -6,7 +6,6 @@
         <title>Product</title>
         <link rel="stylesheet" href="./css/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     </head>
     <body>
         <div class="grid-container">
@@ -14,7 +13,7 @@
                 <img src="./img/logo1.png" alt="Company Logo" class="company-logo">
                     <nav>
                         <ul>
-                            <li><a href="#" class="nav-links">Home</a></li>
+                            <li><a href="index.html" class="nav-links">Home</a></li>
                             <li><a href="products.html" class="nav-links">Portfolio</a></li>
                             <li><a href="about.html" class="nav-links">About</a></li>
                         </ul>
@@ -22,87 +21,95 @@
                     <a href="#" class="contact-button">Contact</a>
             </header>
             <main>
-                <section class="about-our-company-aboutpage">
-                    <h1>About Our Services</h1>
-                    <p>
-                        Company Name
-                    </p>
-                    <p>
-                        Blabla
-                    </p>
-                    <a href="#">Get in touch with us</a>
-                </section>
-                <section class="our-services-aboutus">
-                    <h2>Our Services</h2>
-                    <section class="our-services-branding">
-                        <i>Icon</i>
-                        <h3>Branding</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        </p>
+                <div class="about-grid">
+                    <section class="background-image-aboutpage">
+                        <section class="about-our-company-aboutpage">
+                            <h1 class="about-our-services-h1">About Our Company</h1>
+                            <p class="company-name">
+                                Company Name
+                            </p>
+                            <p class="about-our-company-p">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <a href="#" class="about-our-company-button">Get in touch with us</a>
+                        </section>
                     </section>
-                    <section class="our-services-upload">
-                        <i>Icon</i>
-                        <h3>Design</h3>
-                        <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        </p>
-                    </section>
-                    <section class="our-services-development">
-                        <i>Icon</i>
-                        <h3>Development</h3>
-                        <p>
+                    <section class="our-services-aboutus">
+                        <h2 class="our-services-aboutus-h2">Our Services</h2>
+                        <section class="our-services-branding-aboutpage">
+                            <i class="fa-solid fa-users ourservicesicon"></i>
+                            <h3 class="ourservices-h3">Branding</h3>
+                            <p class="ourservices-p">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </p>
+                        </section>
+                        <section class="our-services-upload-aboutpage">
+                            <i class="fa-solid fa-cloud-arrow-up ourservicesicon"></i>
+                            <h3 class="ourservices-h3">Design</h3>
+                            <p class="ourservices-p">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        </p>
+                            </p>
+                        </section>
+                        <section class="our-services-development-aboutpage">
+                            <i class="fa-solid fa-code ourservicesicon"></i>
+                            <h3 class="ourservices-h3">Development</h3>
+                            <p class="ourservices-p">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </p>
+                        </section>
+                        <section class="our-services-support-aboutpage">
+                            <i class="fa-solid fa-wifi ourservicesicon"></i>
+                            <h3 class="ourservices-h3">Support</h3>
+                            <p class="ourservices-p">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </p>
+                        </section>
                     </section>
-                    <section class="our-services-support">
-                        <i>Icon</i>
-                        <h3>Support</h3>
+                    <section class="clients">
+                        <h2 class="clients-h2">Some of our clients</h2>
+                        <section class="company-logos">
+                            <img src="./img/logo1.png" alt="Company One Logo" class="company-logo">
+                            <img src="./img/logo2.png" alt="Company Two Logo" class="company-logo">
+                            <img src="./img/logo3.png" alt="Company Three Logo" class="company-logo">
+                        </section>
+                    </section>
+                    <section class="contact-us-form">
+                        <h2>Contact Us</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            Send us a message
                         </p>
-                </section>
-                <section class="clients">
-                    <img src="#" alt="Company One Logo">
-                    <img src="#" alt="Company Two Logo">
-                    <img src="#" alt="Company Three Logo">
-                </section>
-                <section class="contact-us-form">
-                    <h2>Contact Us</h2>
-                    <p>
-                        Send us a message
-                    </p>
-                    <form action="#" method="post">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Ola Nordmann">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Branding...">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4" columns="50"></textarea>
-                        <input type="submit" value="Submit">Send message</input>
-                    </form> 
-                </section>
-                <section class="contact-information">
-                    <h2>Contact Information</h2>
-                    <p>
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-                    </p>
-                    <i>Address Icon</i>
-                    <p>
-                        B R A Veien 4, 1757 Halden
-                    </p>
-                    <i>Phone Icon</i>
-                    <p>
-                        69 60 80 00
-                    </p>
-                    <i>Mail icon</i>
-                    <a href="mailto:postmottak@hiof.no">
-                        postmottak@hiof.no
-                    </a>
-                </section>
-                <section class="interactive-map">
-                    <!-- Add Interactive Google Maps Here -->
-                </section>
+                        <form action="#" method="post">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Ola Nordmann">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Branding...">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" columns="50"></textarea>
+                            <input type="submit" value="Submit">Send message</input>
+                        </form> 
+                    </section>
+                    <section class="contact-information">
+                        <h2>Contact Information</h2>
+                        <p>
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                        </p>
+                        <i>Address Icon</i>
+                        <p>
+                            B R A Veien 4, 1757 Halden
+                        </p>
+                        <i>Phone Icon</i>
+                        <p>
+                            69 60 80 00
+                        </p>
+                        <i>Mail icon</i>
+                        <a href="mailto:postmottak@hiof.no">
+                            postmottak@hiof.no
+                        </a>
+                    </section>
+                    <section class="interactive-map">
+                        <!-- Add Interactive Google Maps Here -->
+                    </section>
+                </div>
             </main>
             <footer>
                 <img src="./img/logo1.png" alt="Footer Logo" class="footer-logo">

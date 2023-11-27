@@ -10,7 +10,7 @@
     <body>
         <div class="grid-container">
             <header>
-                <img src="./img/logo1.png" alt="Company Logo" class="company-logo">
+                <img src="./img/logo1.png" alt="Company Logo" id="company-logo">
                 <nav>
                     <ul>
                         <li><a href="index.html" class="nav-links">Home</a></li>
@@ -37,14 +37,17 @@
                 </section>
                 <section class="about-our-company-frontpage">
                     <img src="./img/400x400.svg" alt="A 400x400 picture" class="about-our-img">
-                    <h2 class="about-our-h2">About Our Company</h2>
-                    <p class="about-our-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    </p>
-                    <a href="#" class="read-more-button">Read more about us</a>
+                    <section class="headline-and-paragraph">
+                        <h2 class="about-our-h2">About Our Company</h2>
+                        <p class="about-our-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        </p>
+                        <a href="#" class="read-more-button">Read more about us</a>
+                    </section>
                 </section>
                 <section class="our-services">
                     <h2>Our Services</h2>
+                    <div class="our-services-flex">
                     <section class="our-services-branding">
                         <i class="fa-solid fa-users"></i>
                         <h3>Branding</h3>
@@ -73,25 +76,26 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </p>
                     </section>
+                    </div>
                 </section>
                 <section class="newsletter">
-                    <h3 class="h3-newsletter">Sign Up For Our Newsletter</h3>
-                    <div class="input-container">
+                    <h3 class="h3-newsletter">Sign up for our newsletter</h3>
+                    <section class="input-container">
                         <label for="email" id="email-label">Email</label>
                         <input type="email" id="email" name="email" placeholder="Nora@epost.no">
                         <a href="#" class="sign-me-up-button">Sign me up!</a>
-                    </div>
+                    </section>
                 </section>
                 </div>
             </main>
             <footer>
-                <img src="./img/logo1.png" alt="Footer Logo" class="footer-logo">
+                <img src="./img/logo1.png" alt="Footer Logo" id="footer-logo">
                 <p>CompanyRights CompanyName 2023</p>
-                <div class="social-media-icons">
+                <section class="social-media-icons">
                     <a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
                     <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
                     <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
+                </section>
             </footer>
         </div>
     </body>

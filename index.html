@@ -3,31 +3,50 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Index</title>
+        <meta name="description" content="Welcome to DummyContent, where we specialize in IT solutions to aid your business with branding, design, development, and support!">
+        <meta name="keywords" content="IT, Design, Development, Branding, Support, UX, UI, Websites"> <!-- Jeg vet at denne nesten ikke brukes lenger siden Google nærmest ignorer den, men i en eller annen Powerpoint mener jeg at jeg hørte at den kunne være "lurt å ha med", så jeg tok den med i tilfelle -->
+        <meta property="og:title" content="DummyContent - Branding, Design, Development, and Support">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://dummycontent.com/index.html"> 
+        <meta property="og:img" content="URL to live DummyContent Logo">
+        <meta property="og:description" content="Welcome to DummyContent, where we specialize in IT solutions to aid your business with branding, design, development, and support!">
+        <!-- Kilde: The Open Graph Protocol: https://ogp.me/ -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@DummyContent">
+        <meta name="twitter:creator" content="@HeadofDummyContentMarketing">
+        <meta name="twitter:title" content="DummyContent - Branding, Design, Development, and Support">
+        <meta name="twitter:description" content="Welcome to DummyContent, where we specialize in IT solutions to aid your business with branding, design, development, and support!">
+        <meta name="twitter:image" content="URL to live DummyContent Logo">
+        <!-- Kilde: X Developer Platform: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image -->
+        <title>DummyContent Home Page - Branding, Design, Development, and Support</title>
         <link rel="stylesheet" href="./css/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     </head>
     <body>
+        <a href="#main" class="skip-to-main-button">Skip To Main Content</a>
         <div class="grid-container">
             <header>
-                <img src="./img/logo1.png" alt="Company Logo" id="company-logo">
-                <nav>
+                <a href="index.html" class="logo-container">
+                    <img src="./img/logo1.png" alt="Company Logo" id="company-logo" role="link"> <!-- Logoen i Headeren er innhold fordi det er en link som linker hjem på alle sidene -->
+                </a>
+                <nav role="navigation">
                     <ul>
-                        <li><a href="index.html" class="nav-links">Home</a></li>
-                        <li><a href="products.html" class="nav-links">Portfolio</a></li>
-                        <li><a href="about.html" class="nav-links">About</a></li>
+                        <li><a href="index.html" class="nav-links nav-link-home" title="Go to our home page" aria-label="Home" aria-current="page">Home</a></li>
+                        <li><a href="products.html" class="nav-links" title="Go to our portfolio page" aria-label="Portfolio">Portfolio</a></li>
+                        <li><a href="about.html" class="nav-links" title="Go to our about page" aria-label="About">About</a></li>
+                        <!-- Jeg har snakket med Chat GPT og sett på MDN Web Docs (https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques) når det gjelder aria attributter -->
                     </ul>
                 </nav>
-                <a href="#" class="contact-button">Contact</a>
+                <a href="about.html#contact-us-form-and-info" class="contact-button" title="Go to our contact form">Contact</a>
             </header>
             <main>
                 <div class="index-grid">
                 <section class="introduction">
-                    <h1 class="compelling-headline">Compelling headline</h1>
+                    <h1 class="compelling-headline">Compelling headline</h1> <!-- Bakgrunnsbildet her er ren pynt og helt uessensielt for screenreadere -->
                     <p class="introduction-p">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                     </p>
-                    <a href="#" class="introduction-button">Read more about our services</a>
+                    <a href="#our-services" class="introduction-button" title="Have a look at what we offer">Read more about our services</a>
                 </section>
                 <section class="help-visitors">
                     <h2 class="help-visitors-h2">Engaging subheading. What can you help your visitors with</h2>
@@ -36,65 +55,64 @@
                     </p>
                 </section>
                 <section class="about-our-company-frontpage">
-                    <img src="./img/400x400.svg" alt="A 400x400 picture" class="about-our-img">
+                    <img src="./img/400x400.svg" alt="Descriptive alternative text describing whatever is supposed to be in this picture" class="about-our-img"> <!-- Dette er også pynt -->
                     <section class="headline-and-paragraph">
                         <h2 class="about-our-h2">About Our Company</h2>
                         <p class="about-our-p">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                         </p>
-                        <a href="#" class="read-more-button">Read more about us</a>
+                        <a href="about.html" class="read-more-button" title="Go to our about page">Read more about us</a>
                     </section>
                 </section>
-                <section class="our-services">
-                    <h2>Our Services</h2>
-                    <div class="our-services-flex">
+                <section id="our-services">
+                    <h2 class="index-h2-ourservices">Our Services</h2>
                     <section class="our-services-branding">
-                        <i class="fa-solid fa-users"></i>
+                        <i class="fa-solid fa-users ourservicesicon"></i>
                         <h3>Branding</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </p>
                     </section>
                     <section class="our-services-upload">
-                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <i class="fa-solid fa-cloud-arrow-up ourservicesicon"></i>
                         <h3>Design</h3>
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </p>
                     </section>
                     <section class="our-services-development">
-                        <i class="fa-solid fa-code"></i>
+                        <i class="fa-solid fa-code ourservicesicon"></i>
                         <h3>Development</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </p>
                     </section>
                     <section class="our-services-support">
-                        <i class="fa-solid fa-wifi"></i>
+                        <i class="fa-solid fa-wifi ourservicesicon"></i>
                         <h3>Support</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         </p>
                     </section>
-                    </div>
                 </section>
                 <section class="newsletter">
                     <h3 class="h3-newsletter">Sign up for our newsletter</h3>
                     <section class="input-container">
                         <label for="email" id="email-label">Email</label>
                         <input type="email" id="email" name="email" placeholder="Nora@epost.no">
-                        <a href="#" class="sign-me-up-button">Sign me up!</a>
+                        <a href="#" class="sign-me-up-button" title="Sign up to our newsletter">Sign me up!</a>
                     </section>
                 </section>
                 </div>
+                
             </main>
             <footer>
-                <img src="./img/logo1.png" alt="Footer Logo" id="footer-logo">
+                <img src="./img/logo1.png" alt="Company Logo Footer" id="footer-logo" aria-hidden="true"> <!-- Den nederste logoen linker ingen steder og har derfor blitt gjemt for screenreaders -->
                 <p>CompanyRights CompanyName 2023</p>
                 <section class="social-media-icons">
-                    <a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://facebook.com"><i class="fa-brands fa-square-facebook" title="Go to Facebook" aria-label="Link to Facebook" role="link"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-square-instagram" title="Go to Instagram" aria-label="Link to Instagram" role="link"></i></a>
+                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin" title="Go to Linkedin" aria-label="Link to Linkedin" role="link"></i></a>
                 </section>
             </footer>
         </div>

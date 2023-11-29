@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
+/* https://fonts.google.com/specimen/Titillium+Web */
+
 * {
     margin: 0;
     padding: 0;
@@ -72,7 +74,7 @@ nav {
 
 #company-logo {
     width: 30%;
-    max-width: 150px;
+    max-width: 100px;
     margin-top: 5%;
 }
 
@@ -113,7 +115,8 @@ footer p {
 }
 
 #footer-logo {
-    max-width: 25%;
+    max-width: 100px;
+    width: 100%;
     margin-top: 10%;
     margin-bottom: 5%;
 }
@@ -148,15 +151,13 @@ footer p {
     align-items: center;
     flex-direction: column;
     background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(../img/blablabla.jpg);
+    /* Bilde: https://pixabay.com/no/photos/puter-ark-seng-senget%C3%B8y-820149/ */
     /* Måtte ty til Stack Overflow her da alle bildene mine nektet å bli hvitere via background-color: rgba(value, value, value, value). Løsningen jeg fant var å gjøre dette via linear-gradient istedet. https://stackoverflow.com/questions/7241341/can-i-set-an-opacity-only-to-the-background-image-of-a-div */
 }
 
 .compelling-headline {
     text-align: center;
-    margin-top: 15%;
-    margin-bottom: 5%;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin: 15% 30% 5% 30%;
 }
 
 .introduction-p {
@@ -315,6 +316,7 @@ footer p {
 .portfolio {
     grid-row-start: 1;
     background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),url('../img/computer.jpg');
+    /* Bilde: https://pixabay.com/no/photos/datamaskin-notisbok-kaffe-820281/ */
     /* Måtte ty til Stack Overflow her da alle bildene mine nektet å bli hvitere via background-color: rgba(value, value, value, value). Løsningen jeg fant var å gjøre dette via linear-gradient istedet. https://stackoverflow.com/questions/7241341/can-i-set-an-opacity-only-to-the-background-image-of-a-div */
     background-size: cover;
     display: flex;
@@ -384,6 +386,8 @@ hr {
     margin-bottom: 5%;
 }
 
+/* Måtte ty til Stack Overflow for å HR'ene synlige: https://stackoverflow.com/questions/6382023/changing-the-color-of-an-hr-element */
+
 .portfolio-h3 {
     font-size: 1.5rem;
     margin-bottom: -1rem;
@@ -445,7 +449,7 @@ hr {
 
 .background-image-aboutpage {
     grid-row-start: 1;
-    background-image: url('../img/coffee.jpg');
+    background-image: url('../img/coffee.jpg'); /* Bilde: https://pixabay.com/no/photos/kopp-kaffe-laptop-kontor-macbook-1280537/ */
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -906,7 +910,7 @@ iframe {
     
     #footer-logo {
         width: 15%;
-        max-width: 150px;
+        max-width: 100px;
         margin: 0;
     }
     
@@ -961,7 +965,6 @@ iframe {
         margin: 0;
         color: #252525;
         width: 90%;
-        font-size: auto;
     }
     
     .about-our-company-button {
